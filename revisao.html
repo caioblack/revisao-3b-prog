@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            background-color:blue;
+            width: 20%;
+            height: 20px;
+            margin: 0 auto;
+        }#b{
+            background-color: green;
+            width: 20%;
+            height: 20px;
+            margin: 0 auto
+        }#c{
+            background-color: red;
+            width: 20%;
+            height: 20px;
+            margin: 0 auto
+        }#d{
+            background-color: black;
+            width: 20%;
+            height: 20px;
+            margin: 0 auto
+        }#e{
+            background-color: lightblue;
+            width: 20%;
+            height: 20px;
+            margin: 0 auto
+        }#f{
+            background-color:gray;
+            width: 20%;
+            height: 20px;
+            margin: 0 auto;
+        }#g{
+            background-color: yellow;
+            width: 20%;
+            height: 20px;
+            margin: 0 auto
+        }#h{
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            overflow: scroll;
+        }#i{
+            margin: 20 100;
+            
+        }
+    </style>
+</head>
+<body>
+            <!-- evento de mouse-javascript -->
+            
+            <!-- ONCLICK -->
+            <!-- quando uma o cursor do mouse clica nele -->
+            <script>
+                function a(){
+                     alert('foi');
+                }
+            </script>
+            <button id="a" onclick="a()"></button>
+            <!-- DBCLICK -->
+            <!-- quando o cursor do mouse clica nele duas vezes  -->
+            <script>
+                 function b(){
+                    alert('foi2');
+                 }
+                </script>
+                <button id="b" ondblclick="b()"></button>
+            <!-- MOUSEMOVE -->
+            <!-- quando o cursosr do mouse se move dentro do  elemento -->
+            <script>
+                function c(){
+                    alert('foi3');
+                }
+            </script>
+            <button id="c" onmousemove="c()"></button>
+            <!-- MOUSEOVER -->
+            <!-- quando o cursor do mouse passa sobre o elemento -->
+            <script>
+                function d(){
+                    alert('foi4');
+                }
+            </script>
+            <button id="d" onmouseover="d()"></button>
+            <!-- MOUSESETOU -->
+            <!-- quando o cursor do mouse sai dos limites do elemento -->
+            <script>
+                function e(){
+                    alert('foi5');
+                }
+            </script>
+            <button id="e" onmouseout="e()"></button>
+            <!-- KEYDOW-->
+            <!-- qunado umsa tecla e pressionada  -->
+            <script>
+                function f(){
+                    alert('foi6');
+                }
+            </script>
+            <input type="text" id="f" onkeydown="f()">
+            <!-- KEYUP -->
+            <!-- quando a tecla do telcado e liberada -->
+            <script>
+                function g(){
+                    alert('foi7');
+                }
+            </script>
+            <input type="text" id="g" onkeydown="g()">
+            <!--SCROLL -->
+            <!-- quando há rolagem em um elemento -->
+            <script>
+                function h(){
+                    alert('foi8');
+                }
+            </script>
+            <div onscroll="h()" id="h">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</div>
+
+            <!-- OPERADORES RELACIONAIS -->
+            <!-- 
+                == igualdade
+                != diferença
+                > maior que
+                < menor que
+                >= maior ou igual
+                <= menor ou igual
+             -->
+            <!-- OPERADORES ARITMETICOS -->
+             <!-- 
+                + ADIÇÃO
+                - SUBTRAÇÃO
+                / DIVISÃO
+                * MULTIPLICAÇÃO
+                % RESTO DA DIVISÃO
+              -->
+              <!-- ESTRUTURA DE CASE -->
+           
+                <script src="revisão.js"></script>
+                    <input type="number" id="i" placeholder="aki eu">
+                    <button onclick="i()">kk</button>
+              <!--estrutura de repetição-->
+              <!-- FOR (para)-->
+              <script>
+                function ativarfor(){
+                var j = 0;
+                for(var j=0; j<10; j++){
+                    alert(j)
+                }
+            }
+              </script>
+              <button onclick="ativarfor()">ativar for</button>
+              <!-- WHILE (enquanto)-->
+              <script>
+                function ativarwhile(){
+                var k = 0;
+               while (k < 5){
+               alert(k);
+               k++;
+               }
+            }
+              </script>
+              <button onclick="ativarwhile()">ativar while</button>
+              <!-- DO WHILE (faça enquanto)-->
+              <script>
+                function ativardw(){
+                var l = 0;
+                do {
+                    alert(l);
+                    l++;
+                }while(l<2);
+                
+            }
+              </script>
+              <button onclick="ativardw()">ativar do while</button>
+        
+    
+</body>
+</html>
